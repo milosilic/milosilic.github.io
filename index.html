@@ -17,40 +17,19 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div class="container">
-			<header class="codrops-header">
-				<div class="codrops-links">
-					<a class="codrops-icon codrops-icon--prev" href="" title="Previous Demo"><span>Previous Demo</span></a>
-					<a class="codrops-icon codrops-icon--drop" href="http://tympanus.net/codrops/?p=24567" title="Back to the article"><span>Back to the Codrops article</span></a>
-				</div>
-				<h1>Video Opening Animation</h1>
-			</header><!-- /codrops-header -->
-			<div class="deco-stack">
-				<img class="deco-stack__img deco-stack__img--rotation-1" src="media/boxpic1.jpg" alt="Picture 1" />
-				<img class="deco-stack__img deco-stack__img--rotation-2" src="media/boxpic2.jpg" alt="Picture 2" />
-				<img class="deco-stack__img deco-stack__img--rotation-3" src="media/boxpic3.jpg" alt="Picture 3" />
-			</div>
-			<div class="video-wrap">
-				<div class="video-inner">
-					<video class="video-player" src="media/woods.mp4" poster="media/woods.jpg" preload="auto">
-						<source src="media/woods.webm" type='video/webm; codecs="vp8.0, vorbis"'>
-						<source src="media/woods.ogg" type='video/ogg; codecs="theora, vorbis"'>
-						<source src="media/woods.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
-						<p>Sorry, but your browser does not support this video format.</p>
-					</video>
-					<button class="action action--close"><i class="fa fa-close"></i><span class="action__label action__label--hidden">Close preview</span></button>
-				</div> <!-- /video-inner -->
-			</div><!-- /video-wrap-->
-			<div class="content">
-				<div class="loader">
-					<i class="fa fa-spinner fa-pulse"></i>
-				</div>
-				<button class="action action--hidden action--play">
-					<i class="fa fa-play"></i><span class="action__label">Watch the video</span>
-				</button>
-			</div>
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+
+<video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
+<source src="media/woods.mp4" type="video/mp4">
+</video>
+<div id="polina">
+<h1>Polina</h1>
+<p>filmed by Alexander Wagner 2011
+<p><a href="//demosthenes.info/blog/777/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+<p>Aenean pharetra convallis pellentesque. Vestibulum et metus lectus. Nunc consectetur, ipsum in viverra eleifend, erat erat ultricies felis, at ultricies mi massa eu ligula. Suspendisse in justo dapibus metus sollicitudin ultrices id sed nisl.</p>
+<button>Pause</button>
+</div>
+</body>
 </html>
